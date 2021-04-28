@@ -213,6 +213,7 @@ a {
      background-color: #F26376;
  }
 
+
  .descr{
     position: absolute;
 	width: 360px;
@@ -420,6 +421,11 @@ a {
     color: #F16D7F;
     text-transform: uppercase;
 }
+.fetured-catalog-link {
+    margin: 0 auto;
+    padding-bottom: 96px;
+    padding-top: 24px;
+}
 
 /****************** страница catalog------------------------*/
 
@@ -444,21 +450,20 @@ a {
     text-transform: uppercase;
 }
 
- .dropdown {
-    position: relative;
-    display: inline-block;
-}
  .dropbtn {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     text-transform: uppercase;
     border: none;
-    background-color: #E5E5E5;
-    
+    background-color:#E5E5E5;
 }
 
-.dropdown-content {
+.dropdown-1, .dropdown-2, .dropdown-3 {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content-1, .dropdown-content-2, .dropdown-content-3 {
     display: none;
     position: absolute;
     min-width: 79px;
@@ -468,13 +473,15 @@ a {
     line-height: 17px;
     color: #6F6E6E;
 }
-
-
-.dropdown:hover .dropdown-content {
+.dropdown-1:hover .dropdown-content-1 {
     display: block;
 }
-
-
+.dropdown-2:hover .dropdown-content-2 {
+    display: block;
+}
+.dropdown-3:hover .dropdown-content-3 {
+    display: block;
+}
 
  
  /******--------------********/

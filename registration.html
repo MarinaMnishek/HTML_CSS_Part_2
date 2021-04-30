@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,66 +31,58 @@
 
     <section class="shopping-cart">
         <div class="wrapper shopping-cart-wrapper">
-            <p class="shopping-cart-text">SHOPPING CART</p>
+            <p class="shopping-cart-text">REGISTRATION</p>
         </div>
     </section>
 
 
 
-    <section>
-        <div class="wrapper cart-items-wrapper">
-            <div class="cart-items">
-                <div class="cart-item">
-                    <img src="img/cart_item_1.jpg" alt="cart_item">
-                    <div class="cart-item-text">
-                        <div class="cart-item-text-top-part">
-                            <h6>MANGO PEOPLE <br>T-SHIRT </h6>
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                        </div>
-                        <p>Price: <span class="cart-item-text-price">$300</span></p>
-                        <p>Color: Red</p>
-                        <p>Size: Xl</p>
-                        <p>Quantity: <input class="cart-input" type="number" placeholder="1"></p>
-                    </div>
-                </div>
+    <section class="registration">
+        <div class="wrapper registration-wrapper">
+            <div class="registration-form">
+                <form action="#">
+                    <label class="label-heading" for="first-name">Your Name</label> <br>
+                    <input class="input-text" type="text" name="" id="first-name" placeholder="First Name"> <br>
+                    <input class="input-text" type="text" name="" id="" placeholder="Last Name"> <br>
+                    <input class="input-radio" type="radio" name="sex" id="male">
+                    <label class="label-radio" for="male">Male</label>
+                    <input class="input-radio" type="radio" name="sex" id="female">
+                    <label class="label-radio" for="male">Female</label> <br>
 
-                <div class="cart-item">
-                    <img src="img/cart_item_2.jpg" alt="cart_item">
-                    <div class="cart-item-text">
-                        <div class="cart-item-text-top-part">
-                            <h6>MANGO PEOPLE <br>T-SHIRT</h6>
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                        </div>
-                        <p>Price: <span class="cart-item-text-price">$300</span></p>
-                        <p>Color: Red</p>
-                        <p>Size: Xl</p>
-                        <p>Quantity: <input class="cart-input" type="number" placeholder="1"></p>
-                    </div>
-                </div>
+                    <label class="label-heading" for="login">Login Details</label> <br>
+                    <input class="input-text" type="email" name="" id="login" placeholder="Email"> <br>
+                    <input class="input-text" type="password" name="" id="pass" placeholder="Password"> <br>
+                    <p class="pass-comment"><label class="label-pass" for="pass">Please use 8 or more characters, with
+                            at least
+                            1 number and a
+                            mixture of uppercase
+                            and lowercase letters</label></p><br>
+                    <button class="registration-button">JOIN NOW
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </button>
 
-                <div class="cart-button">
-                    <button>CLEAR SHOPPING CART</button>
-                    <button>CONTINUE SHOPPING</button>
-                </div>
+                </form>
             </div>
 
-            <div class="cart-form">
-                <h5 class="cart-form-heading">SHOPPING ADRESS</h5>
-                <input type="text" placeholder="Bangladesh">
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Postcode / Zip">
-                <a class="cart-form-link" href="#">GET A QUOTE</a>
-                <div class="cart-form-bottom">
-                    <p class="sub-total">SUB TOTAL<span> $900</span></p>
-                    <p class="grand-total">GRAND TOTAL<span> $900</span></p>
-                    <div class="line-3"></div>
-                    <a class="cart-form-bottom-link" href="#">PROCEED TO CHECKOUT</a>
-                </div>
+
+            <div class="registration-text">
+                <h5>LOYALTY HAS ITS PERKS</h5>
+                <p class="registration-text-1">Get in on the loyalty program where you can earn points and unlock
+                    serious perks. Starting with these
+                    as soon as you join:</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i>15% off welcome offer
+                </p>
+                <p><i class="fa fa-check" aria-hidden="true"></i>Free shipping, returns and exchanges on all orders
+
+                </p>
+                <p><i class="fa fa-check" aria-hidden="true"></i>$10 off a purchase on your birthday
+
+                </p>
+                <p><i class="fa fa-check" aria-hidden="true"></i>Early access to products</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i>Exclusive offers &amp; rewards</p>
             </div>
         </div>
     </section>
-
-
 
     <footer>
 

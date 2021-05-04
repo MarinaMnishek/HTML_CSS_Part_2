@@ -95,6 +95,10 @@ a {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    padding: 105px 0;
+ }
+ .choice-text-small {
+     padding: 65px 0;
  }
 .choice-link {
     font-weight: bold;
@@ -114,11 +118,11 @@ a {
 }
 .choice-item:not(:last-child){
     width: 31.5%;
-    height: 260px;
+    /* height: 260px; */
 }
 .choice-item:last-child {
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
     margin-top: 30px;
 }
 .for-women{
@@ -421,11 +425,7 @@ a {
     color: #F16D7F;
     text-transform: uppercase;
 }
-.fetured-catalog-link {
-    margin: 0 auto;
-    padding-bottom: 96px;
-    padding-top: 24px;
-}
+
 
 /****************** страница catalog------------------------*/
 
@@ -434,6 +434,34 @@ a {
     flex-direction: column;
     
 }
+.fetured-catalog-pages {
+   border: 1px solid #EBEBEB;
+   padding: 13px  0; 
+   background-color: #FFFFFF;
+   width: 25%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 109px;
+   margin-top: 48px;
+}
+.fetured-catalog-pages button {
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.fetured-catalog-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin: 0 10px;
+}
+.fetured-catalog-link:hover {
+    color: #EF5B70;
+}
+
+
 .filters {
     display: flex;
     padding: 51px 0 64px 0;
@@ -505,14 +533,16 @@ summary::-webkit-details-marker {
 }
 .pos-left {
     position: absolute;
-    padding-left: 17px;
+    
 }
-.space {
+/* .space {
     width: 34.5%;
-}
+} */
 .text-1 {
     display: flex;
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
+    padding-left: 17px;
+    
 }
 .fa-sort-amount-desc {
     margin-left: 10px;
@@ -525,12 +555,15 @@ summary::-webkit-details-marker {
     border-bottom: 1px solid #EBEBEB;
     padding: 10px 0 10px 11px;
     margin-bottom: 24px;
+    margin-left: 17px;
+    margin-top: 16px;
 }
 .text-2-p {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     margin: 11px 0;
+    padding-left: 17px;
 }
  
  /******--------------********/

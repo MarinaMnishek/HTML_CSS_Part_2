@@ -1,0 +1,4 @@
+@mixin buttons ($color_text_button) {
+    cursor: pointer;
+    color: $color_text_button;
+}

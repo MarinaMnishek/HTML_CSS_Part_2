@@ -937,3 +937,20 @@ summary::-webkit-details-marker {
 .registration-text p i {
     padding-right: 22px;
 }
+.registration-text-list {
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding-inline-start: 30px; 
+    list-style-image: url(img/mark_list.svg);
+}
+.registration-text-list li{
+    margin-bottom: 16px;
+    padding-left: 22px;
+}
+/* Если делать с  :before  то как изменить расстояние между маркером и текстом? */
+/* .registration-text-list li:before {
+    content: url(img/mark_list.svg);
+} */

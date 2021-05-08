@@ -911,11 +911,11 @@ summary::-webkit-details-marker {
     cursor: pointer;
     margin-top: 29px;
 }
-.registration-button:hover {
+/* .registration-button:hover {
     background-color: #FFFFFF;
     color:  #F16D7F;
     outline: 1px solid  #F16D7F;
-}
+} */
 .registration-text h5{
     font-weight: 300;
     font-size: 24px;
@@ -954,3 +954,45 @@ summary::-webkit-details-marker {
 /* .registration-text-list li:before {
     content: url(img/mark_list.svg);
 } */
+
+
+
+
+/* transformation and animation fo test**********************/
+.scale {
+    margin-top: 50px;
+}
+.scale:hover {
+    
+    transform: scale(2);
+    transition: 2s;
+}
+.transformation:hover {
+    margin-left: 200px;
+    transition: 3s;
+    
+}
+.transformation-rotate {
+    transition: all 2s;
+}
+.transformation-rotate:hover {
+    transition: 3s;
+    transform:rotate(180deg);
+}
+@keyframes img-box {
+    30% { background-image: url(img/catalog_item_2.jpg); }
+    60% { background-image: url(img/catalog_item_3.jpg); }
+    90% { background-image: url(img/catalog_item_4.jpg); }
+   }
+.test {
+    padding: 180px 210px;
+    background-repeat: no-repeat;
+    background-image: url(img/catalog_item_1.jpg);
+    animation: img-box 5s ease-in-out infinite;
+}
+.test-margin {
+    height: 150px;
+}
+.test-1 {
+    height: 200px;
+}

@@ -17,13 +17,14 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="nav-left">
-                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img"></a>
-                    <a href="#"><img src="img/search.svg" alt="search" class="search"></a>
+                    <a href="#" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
+                            height="38"></a>
+                    <a href="#"><img src="img/search.svg" alt="search" class="search" width="26" height="27"></a>
                 </div>
                 <div class="nav-right">
-                    <a href="#"><img class="menu" src="img/menu.svg" alt="menu"></a>
-                    <a href="#"><img class="user" src="img/user.svg" alt="user"></a>
-                    <a href="#"><img class="basket" src="img/basket_1.svg" alt="basket"></a>
+                    <a href="#"><img class="menu" src="img/menu.svg" alt="menu" width="32" height="23"></a>
+                    <a href="#"><img class="user" src="img/user.svg" alt="user" width="29" height="29"></a>
+                    <a href="#"><img class="basket" src="img/basket_1.svg" alt="basket" width="41" height="37"></a>
                 </div>
             </nav>
         </div>
@@ -64,11 +65,12 @@
             <p class="product-price">$561</p>
             <div class="line-2"></div>
             <div class="product-sort-list">
-                <p class="product-sort">CHOOSE COLOR<img src="img/down.svg" alt="down"></p>
-                <p class="product-sort">CHOOSE SIZE<img src="img/down.svg" alt="down"></p>
-                <p class="product-sort">QUANTITY<img src="img/down.svg" alt="down"></p>
+                <p class="product-sort">CHOOSE COLOR<img src="img/down.svg" alt="down" width="10" height="5"></p>
+                <p class="product-sort">CHOOSE SIZE<img src="img/down.svg" alt="down" width="10" height="5"></p>
+                <p class="product-sort">QUANTITY<img src="img/down.svg" alt="down" width="10" height="5"></p>
             </div>
-            <a class="product-link" href="#"><img class="product-link-img" src="img/basket_product.svg" alt="basket">Add
+            <a class="product-link" href="#"><img class="product-link-img" src="img/basket_product.svg" alt="basket"
+                    width="26" height="24">Add
                 To Cart</a>
         </div>
 
@@ -111,9 +113,13 @@
 
                 </div>
             </div>
+        </div>
     </section>
 
     <div class="margin-1"></div>
+
+
+
     <footer>
 
         <section class="subscribe">
@@ -151,39 +157,31 @@
 
     </footer>
 
-</body>
 
-<script>
-    var links = ["img/slider.jpg", "img/slider1.jpg", "img/slider2.jpg"];
-    var index = 0;
-    var element = document.getElementById('img');
 
-    function slide(v) {
 
-        index = index + 1 * v;
-        if (index > links.length - 1) {
-            index = 0;
-        } else if (index < 0) {
-            index = links.length - 1;
+
+
+    <script>
+        var links = ["img/slider.jpg", "img/slider1.jpg", "img/slider2.jpg"];
+        var index = 0;
+        var element = document.getElementById('img');
+
+        function slide(v) {
+
+            index = index + 1 * v;
+            if (index > links.length - 1) {
+                index = 0;
+            } else if (index < 0) {
+                index = links.length - 1;
+            }
+            element.src = links[index];
+
+
         }
-        element.src = links[index];
+    </script>
 
 
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 
 </html>

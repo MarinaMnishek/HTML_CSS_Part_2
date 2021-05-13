@@ -16,6 +16,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+img {
+    width: 100%;
+}
 /***************************************
 ***************header*******************
  ******************************************************************/
@@ -24,7 +27,7 @@ a {
     padding: 18px 0;
 }
 .wrapper {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .nav {
@@ -36,6 +39,20 @@ a {
 }
 .nav-right a:not(:last-child){
     margin-right: 33px;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.ssearch {
+    margin-top: 10px;
+}
+.basket {
+    margin-top: -10px;
 }
 /***************************************
 ***************main*******************
@@ -237,6 +254,10 @@ a {
      border: 1px solid white;
      
  }
+ .descr-link img {
+     width: initial;
+     
+ }
 
 
  /***************************************
@@ -306,6 +327,7 @@ a {
 .subscribe-left-img {
     display: block;
     margin-left: 132px;
+    width: initial;
 }
 .subscribe-right {
     margin-top: 53px;
@@ -485,11 +507,13 @@ a {
     text-transform: uppercase;
     border: none;
     background-color:#E5E5E5;
+    padding-left: 0;
 }
 
 .dropdown-1, .dropdown-2, .dropdown-3 {
     position: relative;
     display: inline-block;
+    margin-right: 28px;
 }
 .dropdown-content-1, .dropdown-content-2, .dropdown-content-3 {
     display: none;
@@ -510,6 +534,10 @@ a {
 .dropdown-3:hover .dropdown-content-3 {
     display: block;
 }
+.dropbtn img {
+    width: initial;
+}
+
 /* details***********/
 
 summary {
@@ -673,6 +701,7 @@ summary::-webkit-details-marker {
 .product-link-img {
     display: inline-block;
     padding-right: 23px;
+    width: initial;
 }
 .margin-1 {
     height: 128px;
@@ -951,6 +980,452 @@ summary::-webkit-details-marker {
     padding-left: 22px;
 }
 /* Если делать с  :before  то как изменить расстояние между маркером и текстом? */
-/* .registration-text-list li:before {
-    content: url(img/mark_list.svg);
-} */
+
+/******** Медиа запросы **************************************************************/
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1140px) {
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* index.html*/
+
+    .header {
+        padding: 18px 32px;
+    }
+    .main-wrapper {
+        background-size: contain;
+        background-position: left bottom;
+        padding-top: 191px;
+        padding-bottom: 191px;
+        padding-right: 0;
+    }
+  
+    .main-text {
+        font-size: 44px;
+        line-height: 53px;
+        max-width: 311px;
+        padding-left: 16px;
+        margin-right: 33px;
+    }
+    .main-text-second {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main-text-color {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main {
+       margin-bottom: 20px;
+    }
+    .choice {
+        padding: 0 15px;
+    }
+    .choice-text {
+        padding: 58px 0;
+    }
+    .fetured {
+        margin-top: 154px;
+        margin-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .item {
+        width: 48%;
+        position: relative;
+    }
+    
+    .fetured-link {
+        margin-top: 0;
+    }
+    .descr{
+        width: 100%;
+        height: 100%;
+    }
+    .info-wrapper {
+        flex-direction: column;
+        padding: 48px 0 64px 0;
+    }
+    .info-wrapper > div {
+        width: 47%;
+        padding-bottom: 48px;
+    }
+    .subscribe {
+        padding: 64px 0 140px 0;
+    }
+    .subscribe-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-right {
+        margin-top: 48px;
+        margin-right: 0;
+    }
+    .subscribe-left {
+        width: inherit;
+    }
+    .bottom-wrapper {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .bottom-list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* index.html*/
+
+    .header {
+        padding: 18px 32px;
+    }
+    .main-wrapper {
+        background-image: none;
+        padding: 148px 56px;
+        justify-content: center;
+    }
+  
+    .main-text {
+        font-size: 44px;
+        line-height: 53px;
+        max-width: 311px;
+        padding-left: 16px;
+        margin-right: 33px;
+    }
+    .main-text-second {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main-text-color {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main {
+       margin-bottom: 20px;
+    }
+    .choice {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-item:not(:last-child){
+        width: 100%;
+        min-height: 290px;
+        margin-bottom: 32px;
+
+    }
+    .choice-item:last-child {
+        margin-top: 0;
+    }
+    .choice-text {
+        padding: 58px 0;
+    }
+    .fetured {
+        margin-top: 100px;
+        margin-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .item {
+        width: 48%;
+        position: relative;
+    }
+    
+    .fetured-link {
+        margin-top: 0;
+    }
+    .descr{
+        width: 100%;
+        height: 100%;
+    }
+    .info-wrapper {
+        flex-direction: column;
+        padding: 48px 0 64px 0;
+    }
+    .info-wrapper > div {
+        width: 90%;
+        padding-bottom: 48px;
+    }
+    .subscribe {
+        padding: 64px 0 140px 0;
+    }
+    .subscribe-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-right {
+        margin-top: 48px;
+        margin-right: 0;
+    }
+    .subscribe-left {
+        width: inherit;
+    }
+    .bottom-wrapper {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .bottom-list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (min-width: 321px) and (max-width: 479px) {
+
+    /* index.html*/
+
+    .header {
+        padding: 18px 32px;
+    }
+    .user {
+        display: none;
+    }
+    .basket {
+        display: none;
+    }
+    .nav-right a:not(:last-child) {
+        margin-right: 0;
+    }
+    .main-wrapper {
+        background-image: none;
+        padding: 148px 56px;
+    }
+  
+    .main-text {
+        font-size: 38px;
+        line-height: 46px;
+        padding-left: 15px;
+    }
+    .main-text-second {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main-text-color {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main {
+       margin-bottom: 64px;
+    }
+    .choice {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-item:not(:last-child){
+        width: 100%;
+        min-height: 290px;
+        margin-bottom: 32px;
+
+    }
+    .choice-item:last-child {
+        margin-top: 0;
+    }
+    .choice-text {
+        padding: 58px 0;
+    }
+    .fetured {
+        margin-top: 64px;
+        margin-bottom: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .item {
+        width: 100%;
+        position: relative;
+    }
+    
+    .fetured-link {
+        margin-top: 10px;
+    }
+    .descr{
+        width: 100%;
+        height: 100%;
+    }
+    .info-wrapper {
+        flex-direction: column;
+        padding: 48px 0 64px 0;
+    }
+    .info-wrapper > div {
+        width: 80%;
+        padding-bottom: 48px;
+    }
+    .subscribe {
+        padding: 64px 0 140px 0;
+    }
+    .subscribe-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-right {
+        margin-top: 48px;
+        margin-right: 0;
+    }
+    .subscribe-left {
+        width: inherit;
+    }
+    .subscribe-left-text {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subscribe-right {
+        max-width: 90%;
+    }
+    .input-1 {
+        padding: 15px 0px 15px 25px;
+    }
+    .input-2 {
+        padding: 15px 15px;
+    }
+    .bottom-wrapper {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        flex-direction: column-reverse;
+    }
+    .bottom-list {
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-left: 0;
+    }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
+    /* index.html*/
+
+    .header {
+        padding: 18px 32px;
+    }
+    
+    .user {
+        display: none;
+    }
+    .basket {
+        display: none;
+    }
+    .nav-right a:not(:last-child) {
+        margin-right: 0;
+    }
+    .main-wrapper {
+        background-image: none;
+        padding: 150px 10px;
+    }
+  
+    .main-text {
+        font-size: 38px;
+        line-height: 46px;
+        padding-left: 15px;
+    }
+    .main-text-second {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main-text-color {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .main {
+       margin-bottom: 64px;
+    }
+    .choice {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-item:not(:last-child){
+        width: 100%;
+        min-height: 290px;
+        margin-bottom: 32px;
+
+    }
+    .choice-item:last-child {
+        margin-top: 0;
+    }
+    .choice-text {
+        padding: 58px 0;
+    }
+    .fetured {
+        margin-top: 64px;
+        margin-bottom: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .item {
+        width: 100%;
+        position: relative;
+    }
+    
+    .fetured-link {
+        margin-top: 10px;
+    }
+    .descr{
+        width: 100%;
+        height: 100%;
+    }
+    .info-wrapper {
+        flex-direction: column;
+        padding: 48px 0 64px 0;
+    }
+    .info-wrapper > div {
+        width: 80%;
+        padding-bottom: 48px;
+    }
+    .subscribe {
+        padding: 64px 0 140px 0;
+    }
+    .subscribe-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-right {
+        margin-top: 48px;
+        margin-right: 0;
+    }
+    .subscribe-left {
+        width: inherit;
+    }
+    .subscribe-left-text {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .subscribe-right {
+        max-width: 90%;
+    }
+    .subscribe-left-img {
+        margin: 0 auto;
+    }
+    .input-1 {
+        padding: 15px 0px 15px 5px;
+    }
+    .input-2 {
+        padding: 15px 5px;
+    }
+    .bottom-wrapper {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        flex-direction: column-reverse;
+    }
+    .bottom-list {
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-left: 0;
+    }
+}

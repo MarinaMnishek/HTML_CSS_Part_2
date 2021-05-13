@@ -49,7 +49,9 @@
                     <div class="pos">
                         <details class="pos-left">
                             <!-- в классе  text-1 надо менять цвет фона на белый при разворачивании меню (как мне кажется надо использовать событие onclick)-->
-                            <summary class="text-1">FILTER <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                            <summary class="text-1"> <span>FILTER</span><i class="fa fa-sort-amount-desc text-1-fa"
+                                    aria-hidden="true"></i>
+                            <img class="sort-filter" src="img/sort_filter.svg" alt="filter" width="37" height="25">
                             </summary>
                             <details>
                                 <summary class="text-2">CATEGORY</summary>
@@ -88,43 +90,45 @@
 
                     <!-- <div class="space"></div> -->
 
-
-                    <!-- выпадающие меню сделаны одинаковы для отработки самого выпадания -->
-                    <div class="dropdown-1">
-                        <button class="dropbtn">TRENDING NOW <img src="img/down.svg" alt="down" width="10"
-                                height="5"></button>
-                        <div class="dropdown-content-1">
-                            <input id="XS1" type="checkbox">
-                            <label for="XS1">XS</label> <br>
-                            <input id="S1" type="checkbox">
-                            <label for="S1">S</label><br>
+                    <div class="wrapper-dropdown">
+                        <!-- выпадающие меню сделаны одинаковы для отработки самого выпадания -->
+                        <div class="dropdown-1">
+                            <button class="dropbtn">TRENDING NOW <img src="img/down.svg" alt="down" width="10"
+                                    height="5"></button>
+                            <div class="dropdown-content-1">
+                                <input id="XS1" type="checkbox">
+                                <label for="XS1">XS</label> <br>
+                                <input id="S1" type="checkbox">
+                                <label for="S1">S</label><br>
+                            </div>
+                        </div>
+                        <div class="dropdown-2">
+                            <button class="dropbtn">SIZE <img src="img/down.svg" alt="down" width="10"
+                                    height="5"></button>
+                            <div class="dropdown-content-2">
+                                <input id="XS" type="checkbox">
+                                <label for="XS">XS</label> <br>
+                                <input id="S" type="checkbox">
+                                <label for="S">S</label><br>
+                                <input id="M" type="checkbox">
+                                <label for="M">M</label><br>
+                                <input id="L" type="checkbox">
+                                <label for="L">L</label>
+                            </div>
+                        </div>
+                        <div class="dropdown-3">
+                            <button class="dropbtn">PRICE <img src="img/down.svg" alt="down" width="10"
+                                    height="5"></button>
+                            <div class="dropdown-content-3">
+                                <input id="XS2" type="checkbox">
+                                <label for="XS2">XS</label> <br>
+                                <input id="S2" type="checkbox">
+                                <label for="S2">S</label><br>
+                                <input id="M2" type="checkbox">
+                                <label for="M2">M</label><br>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown-2">
-                        <button class="dropbtn">SIZE <img src="img/down.svg" alt="down" width="10" height="5"></button>
-                        <div class="dropdown-content-2">
-                            <input id="XS" type="checkbox">
-                            <label for="XS">XS</label> <br>
-                            <input id="S" type="checkbox">
-                            <label for="S">S</label><br>
-                            <input id="M" type="checkbox">
-                            <label for="M">M</label><br>
-                            <input id="L" type="checkbox">
-                            <label for="L">L</label>
-                        </div>
-                    </div>
-                    <div class="dropdown-3">
-                        <button class="dropbtn">PRICE <img src="img/down.svg" alt="down" width="10" height="5"></button>
-                        <div class="dropdown-content-3">
-                            <input id="XS2" type="checkbox">
-                            <label for="XS2">XS</label> <br>
-                            <input id="S2" type="checkbox">
-                            <label for="S2">S</label><br>
-                            <input id="M2" type="checkbox">
-                            <label for="M2">M</label><br>
-                        </div>
-                    </div>
-
 
 
                 </div>
@@ -160,7 +164,7 @@
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
-                <div class="item">
+                <div class="item item-3">
 
                     <img src="img/catalog_item_4.jpg" alt="item">
                     <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>

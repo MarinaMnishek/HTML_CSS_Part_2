@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     background: #E5E5E5;
 }
-h1, h3, h4, h5, h6, p {
+h1,h2, h3, h4, h5, h6, p, ul {
     margin: 0;
 }
 a {
@@ -25,6 +25,7 @@ img {
 .header {
     background-color:#222222;
     padding: 18px 0;
+    position: relative;
 }
 .wrapper {
     max-width: 1140px;
@@ -48,12 +49,65 @@ img {
     display: flex;
     align-items: center;
 }
+.open {
+    display: block;
+  }
+.close {
+    display: none;
+  }
 .ssearch {
     margin-top: 10px;
 }
 .basket {
     margin-top: -10px;
 }
+.nav-main-dropdown {
+    position: absolute;
+    top: 77px;
+    right: 1px;
+    background-color: #FFFFFF;
+}
+.nav-main-wrapper {
+    position: relative;
+    padding: 37px 0 37px 34px;
+    min-width: 232px;
+}
+.btn-nav-main {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 26px;
+    color: #6F6E6E;
+}
+.nav-main-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.nav-main-heading {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin: 20px 0 12px 0;
+}
+.nav-main-list {
+    list-style-type: none;
+    padding-left: 26px;
+}
+.nav-main-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.nav-main-item {
+    margin: 11px 0;
+}
+
+
 /***************************************
 ***************main*******************
  ******************************************************************/

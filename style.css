@@ -744,6 +744,7 @@ summary::-webkit-details-marker {
 }
 .product-sort img {
     padding-left: 9px;
+    width: initial;
 }
 .product-link {
     font-size: 16px;
@@ -1161,6 +1162,11 @@ summary::-webkit-details-marker {
         margin-bottom: 63px;
         width: max-content;
     }
+    /* product.html */
+    .item-hidden {
+        display: none;
+    }
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -1261,26 +1267,77 @@ summary::-webkit-details-marker {
         margin-bottom: 0;
     }
     /* catalog.html*/
-    .wrapper {
-        padding-left: 16px;
-        padding-right: 16px;
+    .new-arrivals {
+        padding-top: 24px;
+        padding-bottom: 46px;
     }
-    .filters {
-        justify-content: space-between;
+    .new-arrivals-wrapper {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .new-arrivals-wrapper p {
+        margin-bottom: 32px;
+    }
+    .item-3 {
+        display: none;
+    }
+    .text-1 span {
+        display: none;
+    }
+    .text-1 .fa {
+        font-size: 20px;
     }
     .text-1 {
         padding-left: 0;
     }
+    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .filters {
+        padding: 30px 0;
+    }
+    .dropbtn {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .dropdown-1, .dropdown-2 {
+        margin-right: 24px;
+    }
     .dropdown-3 {
         margin-right: 0;
     }
-    .item-3 {
-        display: none;
+  
+
+
+
+    .fetured-items {
+        padding-left: 8px;
+        padding-right: 8px;
     }
     .fetured-catalog-pages {
         margin-top: 10px;
         margin-bottom: 63px;
         width: max-content;
+    }
+    .subscribe-right-form {
+        justify-content: center;
+    }
+    .bottom-wrapper {
+        padding-bottom: 24px;
+    }
+
+     /* product.html */
+
+     .product-text{
+        width: 80%;
+    }
+    .line-2 {
+        width: 50%;
+    }
+    .item-hidden {
+        display: none;
+    }
+    .margin-1 {
+        height: 64px;
     }
 }
 
@@ -1419,20 +1476,66 @@ summary::-webkit-details-marker {
     .new-arrivals-wrapper p {
         margin-bottom: 32px;
     }
+    .item-3 {
+        display: none;
+    }
     .text-1 span {
         display: none;
     }
     .text-1 .fa {
         font-size: 20px;
     }
-    /* dropdown menu !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    /* .text-1 .fa {
+    .text-1 {
+        padding-left: 0;
+    }
+    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .filters {
+        padding: 30px 0;
+    }
+    .dropbtn {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .dropdown-1, .dropdown-2 {
+        margin-right: 24px;
+    }
+    .dropdown-3 {
+        margin-right: 0;
+    }
+
+
+
+    .fetured-items {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .fetured-catalog-pages {
+        margin-top: 10px;
+        margin-bottom: 63px;
+        width: max-content;
+    }
+    .subscribe-right-form {
+        justify-content: center;
+    }
+    .bottom-wrapper {
+        padding-bottom: 24px;
+    }
+
+    /* product.html */
+
+    .product-text{
+        width: 80%;
+    }
+    .line-2 {
+        width: 50%;
+    }
+    .item-hidden {
         display: none;
     }
-    .sort-filter {
-        display: block;
+    .margin-1 {
+        height: 64px;
     }
-     */
+
 }
 
 /* Iphone 5 */

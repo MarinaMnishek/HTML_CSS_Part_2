@@ -22,13 +22,58 @@
                     <a href="#"><img src="img/search.svg" alt="search" class="search" width="26" height="27"></a>
                 </div>
                 <div class="nav-right">
-                    <a href="#"><img class="menu" src="img/menu.svg" alt="menu" width="32" height="23"></a>
+                    <a href="#"><img class="menu open" src="img/menu.svg" alt="menu" width="32" height="23"></a>
                     <a href="#"><img class="user" src="img/user.svg" alt="user" width="29" height="29"></a>
                     <a href="#"><img class="basket" src="img/basket_1.svg" alt="basket" width="41" height="37"></a>
+
+
                 </div>
             </nav>
+
+        </div>
+        <div class="nav-main-dropdown close">
+            <div class="nav-main-wrapper">
+                <button class="btn-nav-main">&#215;</button>
+                <a href="#">
+                    <h3 class="nav-main-title">MENU</h3>
+                </a>
+                <a href="#">
+                    <h4 class="nav-main-heading">MAN</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Bags</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Denim</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                </ul>
+
+
+                <a href="#">
+                    <h4 class="nav-main-heading">WOMAN</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Jackets & Coats</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Polos</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Shirts</a></li>
+                </ul>
+
+                <a href="#">
+                    <h4 class="nav-main-heading">KIDS</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Jackets & Coats</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Polos</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Bags</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
 
 
     <main class="main">
@@ -214,6 +259,21 @@
 
     </footer>
 
+
+
+    <script>
+        let button = document.querySelector('.menu');
+        let nav = document.querySelector('.nav-main-dropdown');
+        let btn = document.querySelector('.btn-nav-main');
+
+        button.onclick = function () {
+            nav.classList.toggle('open');
+            nav.classList.toggle('close');
+        };
+        btn.onclick = function () {
+            nav.classList.toggle('close');
+        };
+    </script>
 </body>
 
 </html>

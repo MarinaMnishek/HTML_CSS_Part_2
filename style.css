@@ -1209,6 +1209,24 @@ summary::-webkit-details-marker {
         flex-direction: row;
         justify-content: space-between;
     }
+    /* Registration.html */ 
+
+    .registration-form {
+        padding-right: 50px;
+    }
+   
+    .registration-text h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration-text p {
+        font-size: 16px;
+        line-height: 19px;    
+    }
+    .registration-text-list {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -1450,6 +1468,28 @@ summary::-webkit-details-marker {
     }
     .cart-form-bottom-link {
         text-align: center;
+    }
+    /* Registration.html */ 
+
+    .registration-wrapper {
+        padding: 0 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .registration-form {
+        padding: 0 0 40px 0;
+    }
+    .registration-text h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration-text p {
+        font-size: 16px;
+        line-height: 19px;    
+    }
+    .registration-text-list {
+        font-size: 16px;
+        line-height: 19px;
     }
 
 }
@@ -1718,6 +1758,28 @@ summary::-webkit-details-marker {
         text-align: center;
     }
 
+    /* Registration.html */ 
+
+    .registration-wrapper {
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .registration-form {
+        padding: 0 0 40px 0;
+    }
+    .registration-text h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration-text p {
+        font-size: 16px;
+        line-height: 19px;    
+    }
+    .registration-text-list {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
 }
 
 /* Iphone 5 */
@@ -1921,5 +1983,91 @@ summary::-webkit-details-marker {
     }
     .margin-1 {
         height: 64px;
+    }
+    /*cart.html*/
+
+    .shopping-cart-text {
+        text-align: center;
+    }
+    .cart-item {
+        width: 100%;
+    }
+    .cart-items-wrapper {
+        flex-direction: column;
+    }
+    .cart-items {
+        width: 100%;
+        padding: 0 9px;
+    }
+    .cart-button {
+        justify-content: space-around;
+        margin-bottom: 64px;
+    }
+    .cart-items-wrapper {
+        padding-bottom: 70px;
+    }
+    .cart-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cart-item-text-top-part {
+        margin-bottom: 20px;
+    }
+    .cart-item-text {
+        padding: 13px 0 0 17px;
+    }
+    .cart-item-text-top-part .fa {
+        font-size: 16px;
+    }
+    .cart-item img {
+        width: 42%;
+    }
+    .cart-item-text h6 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .cart-item-text p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-item-text-price {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-button button {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9px 18px;
+        margin-top: 0;
+    }
+    .cart-form {
+        flex-direction: column;
+    }
+    .cart-form-top {
+        padding: 0 9px;
+    }
+    .cart-form-bottom-link {
+        text-align: center;
+    }
+    /* Registration.html */ 
+
+    .registration-wrapper {
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .registration-form {
+        padding: 0 0 40px 0;
+    }
+    .registration-text h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .registration-text p {
+        font-size: 16px;
+        line-height: 19px;    
+    }
+    .registration-text-list {
+        font-size: 16px;
+        line-height: 19px;
     }
 }

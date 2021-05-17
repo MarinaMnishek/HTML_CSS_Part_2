@@ -887,6 +887,13 @@ summary::-webkit-details-marker {
     background-color: #FFFFFF;
     width: 105px;
 }
+.cart-form-top {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item img {
+    width: initial;
+}
 .cart-form-bottom{
     display: flex;
     flex-direction: column;
@@ -1039,6 +1046,18 @@ summary::-webkit-details-marker {
 }
 /* Если делать с  :before  то как изменить расстояние между маркером и текстом? */
 
+
+
+
+
+
+
+
+
+
+
+
+
 /******** Медиа запросы **************************************************************/
 
 /* Landscape tablets and medium desktops */
@@ -1047,7 +1066,9 @@ summary::-webkit-details-marker {
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+    .cart-item {
+        width: 100%;
+    }
 }
 
 
@@ -1055,7 +1076,10 @@ summary::-webkit-details-marker {
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* index.html*/
-
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header {
         padding: 18px 32px;
     }
@@ -1167,13 +1191,34 @@ summary::-webkit-details-marker {
         display: none;
     }
 
+    /*cart.html*/
+    .cart-item {
+        width: 100%;
+    }
+    .cart-items-wrapper {
+        flex-direction: column;
+    }
+    .cart-items {
+        width: 100%;
+    }
+    .cart-button {
+        justify-content: space-around;
+        margin-bottom: 64px;
+    }
+    .cart-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
 
     /* index.html*/
-
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header {
         padding: 18px 32px;
     }
@@ -1339,6 +1384,74 @@ summary::-webkit-details-marker {
     .margin-1 {
         height: 64px;
     }
+
+
+    /*cart.html*/
+
+    .shopping-cart-text {
+        text-align: center;
+    }
+    .cart-item {
+        width: 100%;
+    }
+    .cart-items-wrapper {
+        flex-direction: column;
+    }
+    .cart-items {
+        width: 100%;
+        padding: 0 9px;
+    }
+    .cart-button {
+        justify-content: space-around;
+        margin-bottom: 64px;
+    }
+    .cart-items-wrapper {
+        padding-bottom: 70px;
+    }
+    .cart-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cart-item-text-top-part {
+        margin-bottom: 20px;
+    }
+    .cart-item-text {
+        padding: 13px 0 0 17px;
+    }
+    .cart-item-text-top-part .fa {
+        font-size: 16px;
+    }
+    .cart-item img {
+        width: 42%;
+    }
+    .cart-item-text h6 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .cart-item-text p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-item-text-price {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-button button {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9px 18px;
+        margin-top: 0;
+    }
+    .cart-form {
+        flex-direction: column;
+    }
+    .cart-form-top {
+        padding: 0 9px;
+    }
+    .cart-form-bottom-link {
+        text-align: center;
+    }
+
 }
 
 /* Portrait phones and smaller */
@@ -1491,6 +1604,10 @@ summary::-webkit-details-marker {
     /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     .filters {
         padding: 30px 0;
+        
+    }
+    .pos {
+        width: 15.5%;
     }
     .dropbtn {
         font-size: 12px;
@@ -1534,6 +1651,71 @@ summary::-webkit-details-marker {
     }
     .margin-1 {
         height: 64px;
+    }
+    /*cart.html*/
+
+    .shopping-cart-text {
+        text-align: center;
+    }
+    .cart-item {
+        width: 100%;
+    }
+    .cart-items-wrapper {
+        flex-direction: column;
+    }
+    .cart-items {
+        width: 100%;
+        padding: 0 9px;
+    }
+    .cart-button {
+        justify-content: space-around;
+        margin-bottom: 64px;
+    }
+    .cart-items-wrapper {
+        padding-bottom: 70px;
+    }
+    .cart-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cart-item-text-top-part {
+        margin-bottom: 20px;
+    }
+    .cart-item-text {
+        padding: 13px 0 0 17px;
+    }
+    .cart-item-text-top-part .fa {
+        font-size: 16px;
+    }
+    .cart-item img {
+        width: 42%;
+    }
+    .cart-item-text h6 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .cart-item-text p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-item-text-price {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cart-button button {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9px 18px;
+        margin-top: 0;
+    }
+    .cart-form {
+        flex-direction: column;
+    }
+    .cart-form-top {
+        padding: 0 9px;
+    }
+    .cart-form-bottom-link {
+        text-align: center;
     }
 
 }
@@ -1661,5 +1843,83 @@ summary::-webkit-details-marker {
         margin-top: 0;
         margin-bottom: 40px;
         padding-left: 0;
+    }
+
+     /* catalog.html*/
+
+    .new-arrivals {
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+    .new-arrivals-wrapper {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .new-arrivals-wrapper p {
+        margin-bottom: 32px;
+    }
+    .item-3 {
+        display: none;
+    }
+    .text-1 span {
+        display: none;
+    }
+    .text-1 .fa {
+        font-size: 20px;
+    }
+    .text-1 {
+        padding-left: 0;
+    }
+    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    .filters {
+        padding: 30px 0;
+        
+    }
+    .pos {
+        width: 15.5%;
+    }
+    .dropbtn {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .dropdown-1, .dropdown-2 {
+        margin-right: 24px;
+    }
+    .dropdown-3 {
+        margin-right: 0;
+    }
+
+
+
+    .fetured-items {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .fetured-catalog-pages {
+        margin-top: 10px;
+        margin-bottom: 63px;
+        width: max-content;
+    }
+    .subscribe-right-form {
+        justify-content: center;
+    }
+    .bottom-wrapper {
+        padding-bottom: 24px;
+    }
+
+    /* product.html */
+
+    .product-text{
+        width: 80%;
+    }
+    .line-2 {
+        width: 50%;
+    }
+    .item-hidden {
+        display: none;
+    }
+    .margin-1 {
+        height: 64px;
     }
 }

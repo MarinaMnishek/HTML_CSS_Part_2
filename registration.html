@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Registration</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
@@ -17,7 +17,7 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="nav-left">
-                    <a href="#" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
                             height="38"></a>
                     <a href="#"><img src="img/search.svg" alt="search" class="search" width="26" height="27"></a>
                 </div>
@@ -28,6 +28,47 @@
                             height="37"></a>
                 </div>
             </nav>
+        </div>
+        <div class="nav-main-dropdown close">
+            <div class="nav-main-wrapper">
+                <button class="btn-nav-main">&#215;</button>
+                <a href="#">
+                    <h3 class="nav-main-title">MENU</h3>
+                </a>
+                <a href="#">
+                    <h4 class="nav-main-heading">MAN</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Bags</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Denim</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                </ul>
+
+
+                <a href="#">
+                    <h4 class="nav-main-heading">WOMAN</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Jackets & Coats</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Polos</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Shirts</a></li>
+                </ul>
+
+                <a href="#">
+                    <h4 class="nav-main-heading">KIDS</h4>
+                </a>
+                <ul class="nav-main-list">
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Accessories</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Jackets & Coats</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Polos</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">T-Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Shirts</a></li>
+                    <li class="nav-main-item"><a class="nav-main-link" href="#">Bags</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -131,6 +172,21 @@
 
     </footer>
 
+
+
+    <script>
+        let button = document.querySelector('.menu');
+        let nav = document.querySelector('.nav-main-dropdown');
+        let btn = document.querySelector('.btn-nav-main');
+
+        button.onclick = function () {
+            nav.classList.toggle('open');
+            nav.classList.toggle('close');
+        };
+        btn.onclick = function () {
+            nav.classList.toggle('close');
+        };
+    </script>
 </body>
 
 

@@ -17,15 +17,16 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="nav-left">
-                    <a href="#" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
                             height="38"></a>
                     <a href="#"><img src="img/search.svg" alt="search" class="search" width="26" height="27"></a>
                 </div>
                 <div class="nav-right">
                     <a href="#"><img class="menu" src="img/menu.svg" alt="menu" width="32" height="23"></a>
-                    <a href="#"><img class="user" src="img/user.svg" alt="user" width="29" height="29"></a>
-                    <a href="cart.html"><img class="basket" src="img/basket_1.svg" alt="basket" width="41"
-                            height="37"></a>
+                    <a href="registration.html"><img class="user" src="img/user.svg" alt="user" width="29"
+                            height="29"></a>
+                    <a href="#"><img class="basket" src="img/basket_1.svg" alt="basket" width="41" height="37"></a>
+                    <span class="quantity-in-basket">5</span>
                 </div>
             </nav>
         </div>
@@ -87,7 +88,9 @@
                     <img src="img/cart_item_1.jpg" alt="cart_item">
                     <div class="cart-item-text">
                         <div class="cart-item-text-top-part">
-                            <h6>MANGO PEOPLE <br>T-SHIRT </h6>
+                            <a href="product.html">
+                                <h6>MANGO PEOPLE <br>T-SHIRT </h6>
+                            </a>
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                         <p>Price: <span class="cart-item-text-price">$300</span></p>
@@ -101,7 +104,9 @@
                     <img src="img/cart_item_2.jpg" alt="cart_item">
                     <div class="cart-item-text">
                         <div class="cart-item-text-top-part">
-                            <h6>MANGO PEOPLE <br>T-SHIRT</h6>
+                            <a class="testt" href="product.html">
+                                <h6>MANGO PEOPLE <br>T-SHIRT </h6>
+                            </a>
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                         <p>Price: <span class="cart-item-text-price">$300</span></p>
@@ -151,8 +156,8 @@
                     <p>SUBSCRIBE <br>
                         <span>FOR OUR NEWLETTER AND PROMOTION</span>
                     </p>
-                    <form class="subscribe-right-form" action="#">
-                        <input class="input-1" type="text" placeholder="Enter Your Email">
+                    <form class="subscribe-right-form" action="#" method="post">
+                        <input class="input-1" type="email" placeholder="Enter Your Email">
                         <input class="input-2" type="submit" value="Subscribe">
                     </form>
                 </div>
@@ -177,19 +182,7 @@
 
 
 
-    <script>
-        let button = document.querySelector('.menu');
-        let nav = document.querySelector('.nav-main-dropdown');
-        let btn = document.querySelector('.btn-nav-main');
-
-        button.onclick = function () {
-            nav.classList.toggle('open');
-            nav.classList.toggle('close');
-        };
-        btn.onclick = function () {
-            nav.classList.toggle('close');
-        };
-    </script>
+    <script src="main.js"></script>
 </body>
 
 

@@ -26,6 +26,7 @@
                     <a href="#"><img class="user" src="img/user.svg" alt="user" width="29" height="29"></a>
                     <a href="cart.html"><img class="basket" src="img/basket_1.svg" alt="basket" width="41"
                             height="37"></a>
+                    <span class="quantity-in-basket">5</span>
                 </div>
             </nav>
         </div>
@@ -83,7 +84,7 @@
     <section class="registration">
         <div class="wrapper registration-wrapper">
             <div class="registration-form">
-                <form action="#">
+                <form action="#" method="post">
                     <label class="label-heading" for="first-name">Your Name</label> <br>
                     <input class="input-text" type="text" name="FirstName" id="first-name" placeholder="First Name">
                     <br>
@@ -91,7 +92,7 @@
                     <input class="input-radio" type="radio" name="sex" id="male">
                     <label class="label-radio" for="male">Male</label>
                     <input class="input-radio" type="radio" name="sex" id="female">
-                    <label class="label-radio" for="male">Female</label> <br>
+                    <label class="label-radio" for="female">Female</label> <br>
 
                     <label class="label-heading" for="login">Login Details</label> <br>
                     <input class="input-text" type="email" name="Email" id="login" placeholder="Email"> <br>
@@ -149,8 +150,8 @@
                     <p>SUBSCRIBE <br>
                         <span>FOR OUR NEWLETTER AND PROMOTION</span>
                     </p>
-                    <form class="subscribe-right-form" action="#">
-                        <input class="input-1" type="text" placeholder="Enter Your Email">
+                    <form class="subscribe-right-form" action="#" method="post">
+                        <input class="input-1" type="email" placeholder="Enter Your Email">
                         <input class="input-2" type="submit" value="Subscribe">
                     </form>
                 </div>
@@ -174,19 +175,7 @@
 
 
 
-    <script>
-        let button = document.querySelector('.menu');
-        let nav = document.querySelector('.nav-main-dropdown');
-        let btn = document.querySelector('.btn-nav-main');
-
-        button.onclick = function () {
-            nav.classList.toggle('open');
-            nav.classList.toggle('close');
-        };
-        btn.onclick = function () {
-            nav.classList.toggle('close');
-        };
-    </script>
+    <script src="main.js"></script>
 </body>
 
 

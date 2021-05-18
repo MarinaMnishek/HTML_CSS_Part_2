@@ -3,11 +3,16 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     font-weight: 400;
     background: #E5E5E5;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    
 }
 h1,h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -48,6 +53,7 @@ img {
 .nav-right {
     display: flex;
     align-items: center;
+    position: relative;
 }
 .open {
     display: block;
@@ -60,6 +66,20 @@ img {
 }
 .basket {
     margin-top: -10px;
+}
+.quantity-in-basket {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 33px;
+    background-color: #F16D7F;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-left: 7px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
 }
 .nav-main-dropdown {
     position: absolute;
@@ -106,7 +126,16 @@ img {
 .nav-main-item {
     margin: 11px 0;
 }
-
+.nav-main-title:hover {
+    text-decoration: underline;
+    color: #F16D7F;
+}
+.nav-main-heading:hover {
+    text-decoration: underline;
+}
+.nav-main-link:hover {
+    color: #F16D7F;
+}
 
 /***************************************
 ***************main*******************
@@ -260,6 +289,9 @@ img {
     padding: 24px 16px 12px 16px;
     text-transform: uppercase;
  }
+ .item-heading:hover {
+     color: #F16D7F;
+ }
 .item-text{
     font-weight: 300;
     font-size: 14px;
@@ -291,12 +323,13 @@ img {
 
  .descr{
     position: absolute;
-	width: 360px;
-	height: 420px;
+	width: 100%;
+	height: 100%;
 	background-color: rgba(0,0,0,.7);
 	padding-top: 175px;
 	text-align: center;
-	display: none;			
+	display: none;
+    top: 0;			
 	
  }
  .item:hover .descr{
@@ -311,6 +344,9 @@ img {
  .descr-link img {
      width: initial;
      
+ }
+ .bg-hover {
+     position: relative;
  }
 
 
@@ -341,6 +377,9 @@ img {
     color: #FBFBFB;
     text-align: center;
     padding: 28px 0 16px 0;
+}
+.info-heading:hover {
+    color: #F16D7F;
 }
 .info-text {
     font-weight: 300;
@@ -427,10 +466,7 @@ img {
     cursor: pointer;
     text-transform: capitalize;
 }
-/* .input-2:hover {
-    color: #F16D7F;
-    background-color: #fff;
-} */
+
 
 /*****bottom******/
 .bottom {
@@ -578,15 +614,19 @@ img {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    
 }
 .dropdown-1:hover .dropdown-content-1 {
     display: block;
+    cursor: pointer;
 }
 .dropdown-2:hover .dropdown-content-2 {
     display: block;
+    cursor: pointer;
 }
 .dropdown-3:hover .dropdown-content-3 {
     display: block;
+    cursor: pointer;
 }
 .dropbtn img {
     width: initial;
@@ -629,10 +669,19 @@ summary::-webkit-details-marker {
     padding-left: 17px;
     
 }
+details[open] > .text-1 {
+    background-color: #FFFFFF;
+    color: #EF5B70;
+}
+details[open].pos-left {
+    padding-left: 10px;
+    padding-top: 15px;
+}
 .fa-sort-amount-desc {
     margin-left: 10px;
 }
-.text-2 {
+
+.text-2 { 
     font-size: 14px;
     line-height: 17px;
     color: #EF5B70;
@@ -644,35 +693,54 @@ summary::-webkit-details-marker {
     margin-top: 16px;
 }
 .text-2-p {
+    display: block;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     margin: 11px 0;
     padding-left: 17px;
 }
+.text-2-p:hover {
+    color: #EF5B70;
+    cursor: pointer;
+}
+summary:hover {
+    color: #EF5B70;
+    cursor: pointer;
+}
+ 
  
  /******--------------********/
 
  .slider {
     background-color: #F7F7F7;
     padding-bottom: 75px;
+    position: relative;
  }
  .slider-wrapper {
      
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
+ }
+ .slider-wrapper img {
+     width: initial;
  }
 .left {
     border: none;
     /* color: #F16D7F; */
     font-size: 26px;
     padding: 5px 15px;
+    position: absolute;
+    top: 40%;
 }
 .right {
     border: none;
     font-size: 26px;
     padding: 5px 15px;
+    position: absolute;
+    top: 40%;
+    right: 0;
 }
 .left:hover {
     color: #F16D7F;
@@ -689,6 +757,7 @@ summary::-webkit-details-marker {
     padding: 65px 0;
     margin-top: -75px;
     background-color: #FFFFFF;
+    position: relative;
 }
 .product-heding-1 {
     font-weight: 300;
@@ -733,6 +802,9 @@ summary::-webkit-details-marker {
     justify-content: center;
     padding-bottom: 48px;
 }
+.product-sort-list p:hover {
+    cursor: pointer;
+}
 .product-sort {
     font-size: 14px;
     line-height: 17px;
@@ -769,6 +841,7 @@ summary::-webkit-details-marker {
     color: #FFFFFF;
     background-color: #F26376;
 }
+
 
 /***********страница cart ****************/
 
@@ -811,11 +884,18 @@ summary::-webkit-details-marker {
     justify-content: space-between;
     margin-bottom: 42px;
 }
+.cart-item-text h6:hover {
+    cursor: pointer;
+    color: #F16D7F;
+}
 .cart-item-text h6{
     font-size: 24px;
     line-height: 29px;
     color: #222222;
     max-width: 262px;
+}
+.fa-times:hover {
+    cursor: pointer;
 }
 .cart-item-text p {
     margin-bottom: 6px;
@@ -1037,14 +1117,14 @@ summary::-webkit-details-marker {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
-    padding-inline-start: 30px; 
+    padding-left: 30px; 
     list-style-image: url(img/mark_list.svg);
 }
 .registration-text-list li{
     margin-bottom: 16px;
     padding-left: 22px;
 }
-/* Если делать с  :before  то как изменить расстояние между маркером и текстом? */
+
 
 
 
@@ -1069,6 +1149,11 @@ summary::-webkit-details-marker {
     .cart-item {
         width: 100%;
     }
+    .item {
+        
+        position: relative;
+    }
+    
 }
 
 
@@ -1129,10 +1214,7 @@ summary::-webkit-details-marker {
     .fetured-link {
         margin-top: 0;
     }
-    .descr{
-        width: 100%;
-        height: 100%;
-    }
+    
     .info-wrapper {
         flex-direction: column;
         padding: 48px 0 64px 0;
@@ -1186,6 +1268,25 @@ summary::-webkit-details-marker {
         margin-bottom: 63px;
         width: max-content;
     }
+    .nav-main-dropdown {
+        z-index: 3;
+    }
+    .pos-left {
+        z-index: 2;
+        width: 139%;
+    }
+    .fetured-items {
+        z-index: 1;
+    }
+    .dropdown-1:hover .dropdown-content-1 {
+        z-index: 2;
+    }
+    .dropdown-2:hover .dropdown-content-2 {
+        z-index: 2;
+    }
+    .dropdown-3:hover .dropdown-content-3 {
+        z-index: 2;
+    }
     /* product.html */
     .item-hidden {
         display: none;
@@ -1232,6 +1333,9 @@ summary::-webkit-details-marker {
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
 
+    body {
+        display: block;
+    }
     /* index.html*/
     .wrapper {
         padding-left: 15px;
@@ -1295,10 +1399,7 @@ summary::-webkit-details-marker {
     .fetured-link {
         margin-top: 0;
     }
-    .descr{
-        width: 100%;
-        height: 100%;
-    }
+    
     .info-wrapper {
         flex-direction: column;
         padding: 48px 0 64px 0;
@@ -1354,10 +1455,34 @@ summary::-webkit-details-marker {
     .text-1 {
         padding-left: 0;
     }
-    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .nav-main-dropdown {
+        z-index: 3;
+    }
+    .pos-left {
+        z-index: 2;
+        /* width: 139%; */
+    }
+    .fetured-items {
+        z-index: 1;
+    }
+    .dropdown-1:hover .dropdown-content-1 {
+        z-index: 2;
+    }
+    .dropdown-2:hover .dropdown-content-2 {
+        z-index: 2;
+    }
+    .dropdown-3:hover .dropdown-content-3 {
+        z-index: 2;
+    }
+    details[open].pos-left {
+        width: 139%;
+    }
     .filters {
         padding: 30px 0;
+        justify-content: space-between;
     }
+
     .dropbtn {
         font-size: 12px;
         line-height: 14px;
@@ -1479,6 +1604,7 @@ summary::-webkit-details-marker {
     .registration-form {
         padding: 0 0 40px 0;
     }
+    
     .registration-text h5 {
         font-size: 16px;
         line-height: 19px;
@@ -1496,7 +1622,9 @@ summary::-webkit-details-marker {
 
 /* Portrait phones and smaller */
 @media (min-width: 321px) and (max-width: 479px) {
-
+    body {
+        display: block;
+    }
     /* index.html*/
 
     .header {
@@ -1506,6 +1634,9 @@ summary::-webkit-details-marker {
         display: none;
     }
     .basket {
+        display: none;
+    }
+    .quantity-in-basket {
         display: none;
     }
     .nav-right a:not(:last-child) {
@@ -1563,10 +1694,7 @@ summary::-webkit-details-marker {
     .fetured-link {
         margin-top: 10px;
     }
-    .descr{
-        width: 100%;
-        height: 100%;
-    }
+    
     .info-wrapper {
         flex-direction: column;
         padding: 48px 0 64px 0;
@@ -1641,7 +1769,26 @@ summary::-webkit-details-marker {
     .text-1 {
         padding-left: 0;
     }
-    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        
+    .nav-main-dropdown {
+        z-index: 3;
+    }
+    .pos-left {
+        z-index: 2;
+        width: 633%;
+    }
+    .fetured-items {
+        z-index: 1;
+    }
+    .dropdown-1:hover .dropdown-content-1 {
+        z-index: 2;
+    }
+    .dropdown-2:hover .dropdown-content-2 {
+        z-index: 2;
+    }
+    .dropdown-3:hover .dropdown-content-3 {
+        z-index: 2;
+    }
     .filters {
         padding: 30px 0;
         
@@ -1797,6 +1944,9 @@ summary::-webkit-details-marker {
     .basket {
         display: none;
     }
+    .quantity-in-basket {
+        display: none;
+    }
     .nav-right a:not(:last-child) {
         margin-right: 0;
     }
@@ -1852,10 +2002,7 @@ summary::-webkit-details-marker {
     .fetured-link {
         margin-top: 10px;
     }
-    .descr{
-        width: 100%;
-        height: 100%;
-    }
+    
     .info-wrapper {
         flex-direction: column;
         padding: 48px 0 64px 0;
@@ -1933,7 +2080,26 @@ summary::-webkit-details-marker {
     .text-1 {
         padding-left: 0;
     }
-    /* dropdown menu не работают !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    .nav-main-dropdown {
+        z-index: 3;
+    }
+    .pos-left {
+        z-index: 2;
+        width: 633%;
+    }
+    .fetured-items {
+        z-index: 1;
+    }
+    .dropdown-1:hover .dropdown-content-1 {
+        z-index: 2;
+    }
+    .dropdown-2:hover .dropdown-content-2 {
+        z-index: 2;
+    }
+    .dropdown-3:hover .dropdown-content-3 {
+        z-index: 2;
+    }
     .filters {
         padding: 30px 0;
         

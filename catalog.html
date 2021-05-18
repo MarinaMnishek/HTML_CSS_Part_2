@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Catalog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
@@ -17,15 +17,17 @@
         <div class="wrapper">
             <nav class="nav">
                 <div class="nav-left">
-                    <a href="#" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo" class="logo-img" width="44"
                             height="38"></a>
                     <a href="#"><img src="img/search.svg" alt="search" class="search" width="26" height="27"></a>
                 </div>
                 <div class="nav-right">
                     <a href="#"><img class="menu open" src="img/menu.svg" alt="menu" width="32" height="23"></a>
-                    <a href="#"><img class="user" src="img/user.svg" alt="user" width="29" height="29"></a>
+                    <a href="registration.html"><img class="user" src="img/user.svg" alt="user" width="29"
+                            height="29"></a>
                     <a href="cart.html"><img class="basket" src="img/basket_1.svg" alt="basket" width="41"
                             height="37"></a>
+                    <span class="quantity-in-basket">5</span>
                 </div>
             </nav>
         </div>
@@ -90,42 +92,41 @@
                 <div class="filters">
                     <div class="pos">
                         <details class="pos-left">
-                            <!-- в классе  text-1 надо менять цвет фона на белый при разворачивании меню (как мне кажется надо использовать событие onclick)-->
                             <summary class="text-1"> <span>FILTER</span><i class="fa fa-sort-amount-desc text-1-fa"
                                     aria-hidden="true"></i>
                                 <img class="sort-filter" src="img/sort_filter.svg" alt="filter" width="37" height="25">
                             </summary>
                             <details>
                                 <summary class="text-2">CATEGORY</summary>
-                                <p class="text-2-p">Accessories</p>
-                                <p class="text-2-p">Bags</p>
-                                <p class="text-2-p">Denim</p>
-                                <p class="text-2-p">Hoodies &amp; Sweatshirts</p>
-                                <p class="text-2-p">Jackets &amp; Coats</p>
-                                <p class="text-2-p">Polos</p>
-                                <p class="text-2-p">Shirts</p>
-                                <p class="text-2-p">Shoes</p>
-                                <p class="text-2-p">Sweaters &amp; Knits</p>
-                                <p class="text-2-p">T-Shirts</p>
-                                <p class="text-2-p">Tanks</p>
+                                <a href="#" class="text-2-p">Accessories</a>
+                                <a href="#" class="text-2-p">Bags</a>
+                                <a href="#" class="text-2-p">Denim</a>
+                                <a href="#" class="text-2-p">Hoodies &amp; Sweatshirts</a>
+                                <a href="#" class="text-2-p">Jackets &amp; Coats</a>
+                                <a href="#" class="text-2-p">Polos</a>
+                                <a href="#" class="text-2-p">Shirts</a>
+                                <a href="#" class="text-2-p">Shoes</a>
+                                <a href="#" class="text-2-p">Sweaters &amp; Knits</a>
+                                <a href="#" class="text-2-p">T-Shirts</a>
+                                <a href="#" class="text-2-p">Tanks</a>
                             </details>
                             <details>
                                 <summary class="text-2">BRAND</summary>
-                                <p class="text-2-p">Accessories</p>
-                                <p class="text-2-p">Bags</p>
-                                <p class="text-2-p">Denim</p>
-                                <p class="text-2-p">Hoodies &amp; Sweatshirts</p>
-                                <p class="text-2-p">Jackets &amp; Coats</p>
+                                <a href="#" class="text-2-p">Accessories</a>
+                                <a href="#" class="text-2-p">Bags</a>
+                                <a href="#" class="text-2-p">Denim</a>
+                                <a href="#" class="text-2-p">Hoodies &amp; Sweatshirts</a>
+                                <a href="#" class="text-2-p">Jackets &amp; Coats</a>
                             </details>
                             <details>
                                 <summary class="text-2">DESIGNER</summary>
-                                <p class="text-2-p">Jackets &amp; Coats</p>
-                                <p class="text-2-p">Polos</p>
-                                <p class="text-2-p">Shirts</p>
-                                <p class="text-2-p">Shoes</p>
-                                <p class="text-2-p">Sweaters &amp; Knits</p>
-                                <p class="text-2-p">T-Shirts</p>
-                                <p class="text-2-p">Tanks</p>
+                                <a href="#" class="text-2-p">Jackets &amp; Coats</a>
+                                <a href="#" class="text-2-p">Polos</a>
+                                <a href="#" class="text-2-p">Shirts</a>
+                                <a href="#" class="text-2-p">Shoes</a>
+                                <a href="#" class="text-2-p">Sweaters &amp; Knits</a>
+                                <a href="#" class="text-2-p">T-Shirts</a>
+                                <a href="#" class="text-2-p">Tanks</a>
                             </details>
                         </details>
                     </div>
@@ -180,81 +181,137 @@
 
             <div class="fetured-items">
                 <div class="item">
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_1.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
+                    <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym
+                        Ellery teams up with Moda Operandi.</p>
+                    <p class="item-price">$52.00</p>
+                </div>
 
-                    <img src="img/catalog_item_1.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+
+                <div class="item">
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_2.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_2.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
-                    <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym
-                        Ellery teams up with Moda Operandi.</p>
-                    <p class="item-price">$52.00</p>
-                </div>
-                <div class="item">
-
-                    <img src="img/catalog_item_3.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_3.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item item-3">
-
-                    <img src="img/catalog_item_4.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_4.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_5.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_5.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_6.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_6.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_7.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_7.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_8.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_8.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
                     <p class="item-price">$52.00</p>
                 </div>
                 <div class="item">
-
-                    <img src="img/catalog_item_9.jpg" alt="item">
-                    <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    <div class="bg-hover">
+                        <img src="img/catalog_item_9.jpg" alt="item">
+                        <div class="descr">
+                            <a class="descr-link" href="#"><img src="img/basket-mini.png" alt="basket"> Add to Cart</a>
+                        </div>
+                    </div>
+                    <a href="product.html">
+                        <h4 class="item-heading">ELLERY X M'O CAPSULE</h4>
+                    </a>
                     <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym
                         Ellery teams up with Moda Operandi.</p>
@@ -321,8 +378,8 @@
                     <p>SUBSCRIBE <br>
                         <span>FOR OUR NEWLETTER AND PROMOTION</span>
                     </p>
-                    <form class="subscribe-right-form" action="#">
-                        <input class="input-1" type="text" placeholder="Enter Your Email">
+                    <form class="subscribe-right-form" action="#" method="post">
+                        <input class="input-1" type="email" placeholder="Enter Your Email">
                         <input class="input-2" type="submit" value="Subscribe">
                     </form>
                 </div>
@@ -345,19 +402,7 @@
     </footer>
 
 
-    <script>
-        let button = document.querySelector('.menu');
-        let nav = document.querySelector('.nav-main-dropdown');
-        let btn = document.querySelector('.btn-nav-main');
-
-        button.onclick = function () {
-            nav.classList.toggle('open');
-            nav.classList.toggle('close');
-        };
-        btn.onclick = function () {
-            nav.classList.toggle('close');
-        };
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

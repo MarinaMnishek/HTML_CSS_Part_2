@@ -33,16 +33,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   
 }
 .item{
     width: 31.5%;
     margin-bottom: 30px;
     background-color: #F8F8F8;
-    
+    padding-bottom: 20px;
 }
-.item-img {
+/* .item-img {
     width: initial;
-}
+} */
 .item-heading{
     font-size: 13px;
     line-height: 16px;
@@ -65,4 +66,9 @@ img {
     line-height: 19px;
     color: #F16D7F;
     padding: 18px 16px 20px 16px;
+}
+.buy-btn {
+    padding: 10px 15px;
+    display: block;
+    margin: 0 auto;
 }

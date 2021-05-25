@@ -22,18 +22,15 @@ const products = [
     }
 
 ];
+
+
 //Функция для формирования верстки каждого товара
-const renderProduct = (img, title, text, price) => {
-    // return `<div class="item">
-    //             <h3>${title}</h3>
-    //             <p>${price}</p>
-    //             <button class="buy-btn">Купить</button>
-    //         </div>`
+const renderProduct = (obj) => {
     return `<div class="item">
-                <img class="item-img" src="${img}">
-                <a href="#"><h4 class="item-heading">${title}</h4></a>
-                <p class="item-text">${text}</p>
-                <p class="item-price">${price}</p>
+                <img class="item-img" src="${obj.img}">
+                <a href="#"><h4 class="item-heading">${obj.title}</h4></a>
+                <p class="item-text">${obj.text}</p>
+                <p class="item-price">${obj.price} у.е.</p>
                 <button class="buy-btn">Купить</button>
                 
             </div> `
@@ -41,9 +38,9 @@ const renderProduct = (img, title, text, price) => {
 
 };
 const renderPage = list => {
-    const productsList = list.map(item => renderProduct(item.img, item.title, item.text, item.price));
+    const productsList = list.map(item => renderProduct(item));
     //console.log(productsList);
-    document.querySelector('.fetured-items').innerHTML = productsList;
+    document.querySelector('.fetured-items').innerHTML = productsList.join('');
 };
 
 renderPage(products);

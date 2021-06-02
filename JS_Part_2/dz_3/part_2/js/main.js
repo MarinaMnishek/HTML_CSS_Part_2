@@ -68,6 +68,8 @@ class Cart {
                 this.amount = data.amount;
                 this.countGoods = data.countGoods;
                 this.render()
+                this.totalPrice()
+
             })
 
     }
@@ -82,21 +84,24 @@ class Cart {
 
     render() {
         const block = document.querySelector(this.container);
+        const blockSum = document.createElement("p");
+        blockSum.classList = "totalSum";
+        block.append(blockSum);
         for (let product of this.cartGoods) {
             const productObj = new CartItem(product);
             block.insertAdjacentHTML('beforeend', productObj.render());
-
         }
+        blockSum.insertAdjacentHTML('afterBegin', `Общая стоимость: ${this.totalPrice()} $`);
     }
 
-    // totalPrice() {
-    //     let sum = 0;
-
-    //     for (let product of this.cartGoods) {
-    //         sum += product.price;
-    //     }
-    //     alert(`Стоимость всех товаров: ${sum}`);
-    // }
+    totalPrice() {
+        let sum = 0;
+        console.log(this.cartGoods);
+        for (let i = 0; i < this.cartGoods.length; i++) {
+            sum += this.cartGoods[i].price;
+        }
+        return sum;
+    }
 }
 
 class CartItem {

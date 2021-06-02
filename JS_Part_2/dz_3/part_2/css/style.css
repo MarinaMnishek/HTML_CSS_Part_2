@@ -99,3 +99,7 @@ img {
     margin: 10px 0 0 50px;
     padding: 0;
 }
+.totalSum {
+    font-weight: 900;
+    text-align: right;
+}

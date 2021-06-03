@@ -1,0 +1,12 @@
+input {
+    margin: 10px 0;
+}
+label {
+    margin: 20px 10px;
+}
+.red {
+    border: 2px solid red;
+}
+.red-text {
+    color: red;
+}
